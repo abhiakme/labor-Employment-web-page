@@ -1,0 +1,197 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Labour Section</title>
+  </head>
+  <body>
+    {{>mnavbar data=detail}}  
+
+    <h1>Labour Section</h1>
+<form action="/labour" method="post">
+    <section class="h-100 bg-dark">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card card-registration my-4">
+          <div class="row g-0">
+            <div class="col-xl-6 d-none d-xl-block">
+              <img src="images/labour.jpg"
+                alt="Sample photo" class="img-fluid"
+                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+            </div>
+            <div class="col-xl-6">
+              <div class="card-body p-md-5 text-black" >
+                <h3 class="mb-5 text-uppercase">labour Detail form</h3>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" name="fname" id="form3Example1m" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1m">First name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" name="lname" id="form3Example1n" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1n">Last name</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" name="Mname" id="form3Example1m1" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1m1">Mother's name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" name="Fname" id="form3Example1n1" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1n1">Father's name</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" name="add" id="form3Example8" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example8">Address</label>
+                </div>
+
+                <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                  <h6 class="mb-0 me-4">Gender: </h6>
+
+                  <div class="form-check form-check-inline mb-0 me-4">
+                    <input class="form-check-input" type="radio" name="gender" id="femaleGender"
+                      value="Female" />
+                    <label class="form-check-label" for="femaleGender">Female</label>
+                  </div>
+
+                  <div class="form-check form-check-inline mb-0 me-4">
+                    <input class="form-check-input" type="radio" name="gender" id="maleGender"
+                      value="Male" />
+                    <label class="form-check-label" for="maleGender">Male</label>
+                  </div>
+
+                  <div class="form-check form-check-inline mb-0">
+                    <input class="form-check-input" type="radio" name="gender" id="otherGender"
+                      value="Other" />
+                    <label class="form-check-label" for="otherGender">Other</label>
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                     <h4>State</h4>
+                    <select name="state" class="select">
+                      <option value="MP">MP</option>
+                      <option value="Bihar">Bihar</option>
+                      <option value="UP">UP</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="other">other</option>
+                    </select>
+
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <h4>City</h4>
+                    <select name="city" class="select">
+                      <option value="Dharbhanga">Dharbhanga</option>
+                      <option value="Patna">Patna</option>
+                      <option value="Sasaram">Sasaram</option>
+                      <option value="Varansi">Varansi</option>
+                      <option value="other">other</option>
+                    </select>
+
+                  </div>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" name="dob" id="form3Example9" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example9">DOB</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" name="pin" id="form3Example90" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example90">Pincode</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" name="phone" id="form3Example99" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example99">Phone no</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" name="adhar" id="form3Example99" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example99">Adhar no</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" name="email" id="form3Example97" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example97">Email ID</label>
+                </div>
+
+                <div class="d-flex justify-content-end pt-3">
+                  <button type="submit" class="btn btn-warning btn-lg ms-2">Submit form</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</form>
+     {{!-- contact us --}}
+   <section id="contact" class="py-5 background1">
+    <div class="container">
+        <h3 class="text-center text-secondary"> Contact Us</h3>
+        <div class="row">
+            <div class="col-md-12">
+
+                <form action="/process" method="post">
+                       <div class="mb-3">
+                         <label for="exampleInputEmail1" class="form-label">Email address</label>
+                         <input type="email" name="email" placeholder="We'll never share your email with anyone else." class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                       </div>
+                       
+                       <div class="mb-3">
+                         <label for="contactnumber" class="form-label">Your contact number</label>
+                         <input type="number" name="contact" class="form-control" id="contactnumber">
+                       </div>
+
+                       <div class="form-floating mt-2">
+                         <textarea style="height:200px" name="query" class="form-control" placeholder="Enter your query hear" id="queryfield"></textarea>
+                         <label for="queryfield">Your Query</label>
+                       </div>
+
+                       <div class="container text-center">
+                           <button type="submit" class="btn btn-dark mt-3">Submit</button>
+                       </div>   
+                </form>
+
+            </div>
+        </div>
+    </div>
+   </section>
+ 
+        {{!-- about secion --}}
+        <section id="about">
+          <h3 class="text-center text-secondary" >About Section</h3>
+        </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

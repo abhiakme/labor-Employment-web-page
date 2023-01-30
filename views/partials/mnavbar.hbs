@@ -1,0 +1,36 @@
+{{!-- {{data}} --}}
+<nav class="navbar border-bottom navbar-expand-lg py-3 navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/mindex">
+        <img src="{{data.brandIconUrl}}" alt="" width="30" height="30" style="border-radius:50%" class="d-inline-block align-text-top">
+        {{data.brandName}}</a>
+        <h4>username:{{d.name}}</h4>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+         {{!-- loop --}}
+
+        {{#each data.links}}  
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{this.url}}">{{this.label}}</a>
+        </li>
+        
+        {{/each}}
+        <div class="dropdown">
+          <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+             Services
+          </button>
+           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+             <li><a class="dropdown-item" href="/labour">Labour Section</a></li>
+             <li><a class="dropdown-item" href="/employee">Employee Section</a></li>
+           </ul>
+      </div>
+
+      </ul>
+    </div>
+  </div>
+</nav>
